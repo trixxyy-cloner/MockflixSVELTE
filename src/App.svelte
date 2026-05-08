@@ -74,6 +74,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {#each movies as movie (movie.id)}
           <MovieCard
+            id={movie.id}
             title={movie.title}
             poster={getImageUrl(movie.poster_path)}
             rating={movie.vote_average}
