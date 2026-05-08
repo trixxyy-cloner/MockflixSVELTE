@@ -14,6 +14,19 @@ export async function getPopularMovies(page: number = 1) {
     }
 }
 
+export async function searchMovies(query: string, page: number = 1) {
+    try {
+        const response = await fetch(
+            `${BASE_URL}/search/movie?api_key=${API_KEY}&query=${query}&page=${page}`
+        );
+        const data = await response.json();
+        return data.results;
+    } catch (error) {
+        console.error('Fel vid sökning:', error);
+        return [];
+    }
+}
+
 export function getImageUrl(posterPath: string) {
     return `https://image.tmdb.org/t/p/w500${posterPath}`;
 }
