@@ -1,0 +1,25 @@
+{
+  "name": "mockflixsvelte",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^7.1.1",
+    "@tsconfig/svelte": "^5.0.8",
+    "css": "^3.0.0",
+    "svelte": "^5.55.5",
+    "svelte-check": "^4.4.8",
+    "tailwind": "^4.0.0",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.10"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.2.4",
+    "tailwindcss": "^4.2.4"
+  }
+}
